@@ -1,0 +1,31 @@
+var nome = 'Rodrigo'
+var lastName = 'Duran'
+var age = 3
+var age2 = 2
+var anos = 'anos'
+var ageGrandfather = age + age2
+
+console.log(nome + ' ' + lastName + ':' + ' ' + age + ' ' + anos)
+console.log(age)
+console.log(ageGrandfather)
+
+
+const allEqual = arr => 
+  arr.every(val => val === arr[0])
+
+allEqual([100, 100, 100])
+allEqual([1234, 1234])
+allEqual([456, 789])
+allEqual([10, 10, 50])
+
+function potencia(base) {
+    return function(exp) {
+        return Math.pow(base, exp)
+    }
+}
+const potenciaDe2 = potencia(2)
+console.log(potenciaDe2(8))
+
+const resultadoPot = potencia(3)(4)
+console.log(resultadoPot)
+
