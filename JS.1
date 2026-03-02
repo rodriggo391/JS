@@ -21,6 +21,7 @@ allEqual([10, 10, 50])
 function potencia(base) {
     return function(exp) {
         return Math.pow(base, exp)
+        return base ** exp
     }
 }
 const potenciaDe2 = potencia(2)
